@@ -1,0 +1,58 @@
+/* ActivityForm.css */
+.activity-form {
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #1d7ae4af;
+    color: #f4f7f9;
+}
+
+.activity-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f4f7f9;
+    font-size: 24px;
+}
+
+.activity-form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #f4f7f9;
+}
+
+.activity-form input[type="text"],
+.activity-form input[type="email"],
+.activity-form input[type="date"],
+.activity-form select,
+.activity-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced6e0;
+    border-radius: 5px;
+    background-color: #f4f7f9;
+    color: #333;
+    font-size: 16px;
+}
+
+.activity-form textarea {
+    resize: vertical;
+}
+
+.activity-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2680c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.activity-form button:hover {
+    background-color: #1a6fd3;
+}

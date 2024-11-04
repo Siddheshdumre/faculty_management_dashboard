@@ -1,0 +1,46 @@
+.dashboard {
+  padding: 150px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.dashboard h3 {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #555;
+  text-align: center;
+}
+
+.dashboard .chart-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dashboard .chart-container > div {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  flex: 1 1 400px; /* Ensure charts take equal space, but responsive */
+  min-width: 300px; /* Minimum width for responsiveness */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .dashboard .chart-container {
+      flex-direction: column; /* Stack charts on smaller screens */
+  }
+  
+  .dashboard .chart-container > div {
+      width: 100%; /* Full width on small screens */
+  }
+}

@@ -1,0 +1,52 @@
+.about {
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about.reverse {
+    flex-direction: row-reverse;
+}
+
+.about.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-left, .about-right {
+    flex-basis: 50%;
+}
+
+.about-left {
+    padding-right: 20px;
+}
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-left h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-left p {
+    font-size: 16px;
+    line-height: 1.5;
+}
